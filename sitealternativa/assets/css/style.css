@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+.divisoria {
+    border-left: 2.5px solid white;
+    width: 1px;
+    height: 16px;
+}
+
+#logo img {
+    height: 94px;
+    width: 301px;
+}
+
+#header {
+    box-sizing: border-box;
+    display: flex;
+    height: 140px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+#menu {
+    margin-top: 16px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#menu a {
+    display: block;
+    padding: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+/* effect */
+.area-1, .elemento {
+    visibility: hidden;
+}
+
+/* Tela 1 */
+
+.tela1 {
+    background-image: linear-gradient(180deg, rgba(177, 109, 180, 0.8), rgba(84, 72, 134, 0.8)), url('../images/imagem-tela-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    height: calc(100vh - 140px);
+    justify-content: center;
+}
+
+.textos h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 54px;
+    font-weight: bold;
+}
+.textos h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+#btn-services {
+    padding: 18px 36px;
+    font-size: 24px;
+    border: none;
+    background-color: white;
+    color: #AC6BB2;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    transition: .5s;
+}
+
+#btn-services:hover {
+    background: #AC6BB2;
+    color: white
+}
+
+/* TELA 2 */
+
+.titulo-tela-2 {
+    color: #3B3B3B;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px;
+    
+}
+
+.texto-melhor-escolha p {
+    font-family: 'Open Sans', sans-serif;
+    color: #3E1D41;
+    font-size: 24px;
+    text-align: left;
+    
+}
+
+.mockup-celular {
+    width: 350px;
+    float: right;
+    flex: 1;
+    margin-bottom: 24px;
+}
+
+.texto-melhor-escolha h1, .texto-melhor-escolha p{
+    display: block;
+}
+
+.tela2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 100vh;
+}
+
+.flex {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.flex > div {
+    flex: 1 1 300px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    text-align: center;
+    border: none;
+    margin: 0px 32px;
+}
+
+.card span {
+    color: #3E1D41;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.card p {
+    color: #3E1D41;
+    margin: 0;
+    font-size: 16px;
+}
+
+.flex-icon {
+    width: 120px;
+}
+
+.processo {
+    margin-top: 48px;
+}
+
+/* Tela 3 */
+.tela3 {
+    background-image: linear-gradient(180deg,rgba(84, 72, 134, 0.8), rgba(177, 109, 180, 0.8)), url('../images/imagem-tela-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.titulo-tela-3 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.flex-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.flex-2 > div {
+    flex: 1 1 280px;
+    margin-top: 80px;
+}
+
+.card-2 {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    text-align: center;
+    border: none;
+    margin: 0px 32px;
+    background-color: white;
+    border-radius: 16px;
+    height: 350px;
+}
+
+.card-2 span {
+    color: #AC6BB2;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #E6E6E6;
+}
+
+.card-2 p {
+    padding-bottom: 16px;
+    color: black;
+    font-weight: 400;
+    margin: 0;
+    font-size: 16px;
+}
+
+.btn-card-2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #AC6BB2;
+    background-color: white;
+    padding: 8px 32px;
+    border: 2px solid #AC6BB2;
+    transition: .5s;
+}
+
+.btn-card-2:hover {
+    background: #AC6BB2;
+    color: white;
+}
+
+.perfil-1 {
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/servico-1.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-top: -100px;
+    border: 8px solid white;
+}
+.perfil-2 {
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/servico-2.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-top: -100px;
+    border: 8px solid white;
+}
+.perfil-3 {
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/servico-3.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-top: -100px;
+    border: 8px solid white;
+}
+.perfil-4 {
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/servico-3.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-top: -100px;
+    border: 8px solid white;
+}
+.perfil-5 {
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/servico-3.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-top: -100px;
+    border: 8px solid white;
+}
+.perfil-6 {
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/servico-3.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-top: -100px;
+    border: 8px solid white;
+}
+
+/* Tela 4 */
+
+.tela4 {
+    padding-bottom: 80px;
+}
+
+.equipe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.equipe-imagem {
+    min-height: 238px;
+    width: 523px;
+    background-image: url(../images/imagem-tela-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 48%;
+    border: 6px solid #AC6BB2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.equipe-texto {
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    min-height: 238px;
+    width: 48%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.equipe-texto p {
+    font-family: 'Lato';
+    font-size: 16px;
+}
+
+.equipe-texto button {
+    background-color: red;
+    color: white;
+    padding: 8px 32px;
+    border: none;
+    font-family: 'Lato';
+    transition: .5s;
+    font-weight: bold;
+}
+
+.equipe-texto button:hover {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
+
+.tela6 {
+    display: flex;
+    align-items: center;
+    min-height: 129px;
+    background:linear-gradient(120deg,#B56EB7,#AC6BB2);
+}
+.tela6 main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.tela6 img{
+    float: left;
+    flex: 1;
+}
+
+.tela6 p {
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    text-align: right;
+}
+
+.tela7 {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.rodape span {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open sans';
+    color: #41417D;
+}
+
+.rodape p {
+    font-family: 'Open sans';
+    color: #3B3B3B;
+    font-size: 16px;
+}
+
+.flex-3 {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex-3 > div {
+    flex: 1 1 150px;
+}
+
+
+.tela8 p {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Open sans';
+    text-align: center;
+    margin: 0;
+}
+
+
+
+@media (max-width:1400px) {
+    .equipe {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .equipe-imagem,.equipe-texto {
+        width: 100%;
+    }
+}
+
+@media (max-width: 999px) {
+
+    .processo {
+        margin-top: 40px;
+    }
+
+    #header {
+        height: 100px;
+        right: 0;
+    }
+
+    #logo img {
+        height: 63px;
+        width: 201px;
+    }
+
+    .divisoria {
+        display: none;
+    }
+    
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        padding: 0;
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 100px;
+        right: 0;
+        transition: .1s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        background-color: white;
+    }
+
+    #menu li a {
+        color: black;
+    }
+
+    #nav.active #menu{
+        z-index: 1000;
+        height: calc(100vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        text-align: center;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0,.1);
+        color: black;
+    }
+    #menu a:before {
+        content: ' ';
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 0px;
+        height: 0px;
+        background:white;
+        transition: all 0s ease;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        color: white;   
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background:currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    
+    .textos h1 {
+        font-size: 28px;
+    }
+
+    .textos h2 {
+        font-size: 16px;
+        margin-top: -12px;
+    }
+
+    #btn-services {
+        margin-top: -12px;
+        padding: 10px 28px;
+        font-size: 16px;
+    }
+
+    .titulo-tela-2 {
+        font-size: 28px;
+    }
+
+    .texto-melhor-escolha p {
+        font-size: 16px;
+    }
+
+    .mockup-celular {
+        width: 225px;
+        float: right;
+        flex: 1;
+    }
+
+    .card span {
+        font-size: 20px;
+    }
+    .card p {
+        font-size: 16px;
+    }
+
+    .card {
+        gap: 8px;
+    }
+    
+    .flex-icon {
+        width: 90px;
+    }
+
+    .tela2 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .tela3 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .flex-2 {
+        gap: 16px;
+    }
+    
+    .card-2 {
+        padding-bottom: 150px;
+    }
+
+    .titulo-tela-3 {
+        font-size: 28px;
+        
+        padding-bottom: 20px;
+    }
+
+    .tela4 {
+        padding-bottom: 40px;
+    }
+
+    .tela6 {
+        min-height: 80px;
+        max-height: 80px;
+    }
+
+    .tela6 main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto-tela-6 {
+        display: none;
+    }
+
+    .tela8 p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-device-width: 471px) and (max-device-width: 768px) {
+    .social p,.endereco p {
+        text-align: right;
+    }
+}
+
+@media screen and (max-device-width: 461px) {
+    .tela7 {
+        min-height: 80vh;
+    }
+    .card-3 p {
+        text-align: center;
+    }
+
+
+}
